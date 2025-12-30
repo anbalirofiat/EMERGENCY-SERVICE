@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+
+/* Mobile */
+body {
+  background: #f4f7fa;
+  font-family: Arial, sans-serif;
+  padding-top: 65px;
+}
+
+/* Sticky Emergency Bar */
+.emergency-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #dc3545;
+  color: #fff;
+  z-index: 999;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.emergency-bar a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Cards */
+.service-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.card-top {
+  color: #fff;
+  padding: 25px;
+  font-size: 40px;
+}
+
+.police-bg { background: #0d6efd; }
+.fire-bg { background: #fd7e14; }
+.ambulance-bg { background: #dc3545; }
+
+/* First Aid */
+.first-aid li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Form */
+form label {
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background: #212529;
+  color: #ccc;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/*SMALL DEVICES (≥576px) */
+@media (min-width: 576px) {
+  .emergency-bar {
+    font-size: 15px;
+  }
+
+  .card-top {
+    font-size: 42px;
+  }
+
+  .first-aid li {
+    font-size: 15px;
+  }
+}
+
+/*TABLETS (≥768px)*/
+@media (min-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .emergency-bar {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .service-card {
+    height: 100%;
+  }
+
+  .card-top {
+    padding: 30px;
+    font-size: 45px;
+  }
+}
+
+/*LAPTOPS (≥992px)*/
+@media (min-width: 992px) {
+  .emergency-bar {
+    font-size: 17px;
+  }
+
+  .card-top {
+    font-size: 48px;
+  }
+
+  .first-aid li {
+    font-size: 16px;
+  }
+}
+
+/*LARGE SCREENS (≥1200px)*/
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .card-top {
+    font-size: 52px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Sticky Emergency Bar -->
+<div class="emergency-bar">
+  🚨 Emergency Hotline:
+  <a href="tel:112">112</a> — Ogun & Lagos State
+</div>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold">24/7 Emergency Services</h1>
+    <p class="text-muted">
+      Police, Fire & Ambulance response across Ogun and Lagos State, Nigeria.
+    </p>
+  </div>
+
+  <!-- Services -->
+  <div class="row g-4">
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card service-card">
+        <div class="card-top police-bg">
+          <i class="bi bi-shield-lock"></i>
+        </div>
+        <div class="card-body">
+          <h4>POLICE</h4>
+          <p>Crime, theft, violence, security emergencies.</p>
+          <a href="tel:112" class="btn btn-primary w-100">Call Police</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card service-card">
+        <div class="card-top fire-bg">
+          <i class="bi bi-fire"></i>
+        </div>
+        <div class="card-body">
+          <h4>FIRE SERVICE</h4>
+          <p>Fire outbreaks, gas leaks, rescue operations.</p>
+          <a href="tel:112" class="btn btn-warning w-100 text-white">Call Fire</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card service-card">
+        <div class="card-top ambulance-bg">
+          <i class="bi bi-ambulance"></i>
+        </div>
+        <div class="card-body">
+          <h4>AMBULANCE</h4>
+          <p>Medical emergencies and accident response.</p>
+          <a href="tel:112" class="btn btn-danger w-100">Call Ambulance</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- First Aid -->
+  <div class="mt-5">
+    <h3 class="fw-bold">🚑 First Aid Guide</h3>
+    <ul class="first-aid">
+      <li><strong>Bleeding:</strong> Apply pressure immediately.</li>
+      <li><strong>Burns:</strong> Cool with clean water.</li>
+      <li><strong>Unconscious:</strong> Recovery position & call 112.</li>
+      <li><strong>Choking:</strong> Back blows if necessary.</li>
+    </ul>
+  </div>
+
+  <!-- Feedback -->
+  <div class="mt-5">
+    <h3 class="fw-bold">📝 Emergency Report / Feedback</h3>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input class="form-control" placeholder="Full Name">
+      </div>
+      <div class="col-md-6">
+        <input class="form-control" placeholder="Phone Number">
+      </div>
+      <div class="col-md-6">
+        <input class="form-control" placeholder="Location">
+      </div>
+      <div class="col-md-6">
+        <select class="form-select">
+          <option>Police</option>
+          <option>Fire</option>
+          <option>Medical</option>
+          <option>Feedback</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="4" placeholder="Details"></textarea>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-success w-100">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Ogun & Lagos Emergency Response — Dial 112
+</footer>
+
+</body>
+</html>
